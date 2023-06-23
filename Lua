@@ -273,7 +273,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	if projectName then
 		self2.tip.Text = projectName
 	else
-		self2.tip.Text = "Auto Hub '.. string.sub(tostring(self.ToggleKey), 14) ..' Football Fusion 2 Script"
+		self2.tip.Text = "Auto Hub Football Fusion 2 Script"
 	end
     
     function finity.settitle(text)
