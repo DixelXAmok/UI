@@ -218,7 +218,7 @@ local function createOriginialElements()
 		local tabsUIListLayout = Instance.new("UIListLayout")
 		local pageLogo = Instance.new("ImageLabel")
 		
-		screenGui.Name = "Auto Hub Football Fusion 2 Script"
+		screenGui.Name = "Cerberus"
 		screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 		screenGui.IgnoreGuiInset = true
 		
@@ -243,7 +243,7 @@ local function createOriginialElements()
 		
 		heading.Name = "Heading"
 		heading.Parent = background
-		heading.BackgroundColor3 = Color3.fromRGB(255, 33, 33)
+		heading.BackgroundColor3 = Color3.fromRGB(40, 41, 52)
 		heading.BorderSizePixel = 0
 		heading.Size = UDim2.new(1, 0, 0.0500000007, 0)
 		heading.AutoButtonColor = false
@@ -373,7 +373,7 @@ local function createOriginialElements()
 		tabsUIListLayout.Parent = tabs
 		tabsUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		tabsUIListLayout.Padding = UDim.new(0, 5)
-
+		
 		pageLogo.Name = "PageLogo"
 		pageLogo.AnchorPoint = Vector2.new(1, 1)
 		pageLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -389,7 +389,6 @@ local function createOriginialElements()
 
 		return screenGui
 	end
-		
 	
 	local function createTab()
 		local tab = Instance.new("TextButton")
@@ -431,7 +430,7 @@ local function createOriginialElements()
 		tabImage.Name = "TabImage"
 		tabImage.Parent = tab
 		tabImage.AnchorPoint = Vector2.new(0, 0.5)
-		tabImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tabImage.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		tabImage.BackgroundTransparency = 1.000
 		tabImage.BorderSizePixel = 0
 		tabImage.Position = UDim2.new(0.0350000001, 5, 0.5, 0)
@@ -442,7 +441,7 @@ local function createOriginialElements()
 
 		tabSeperator.Name = "TabSeperator"
 		tabSeperator.Parent = tab
-		tabSeperator.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
+		tabSeperator.BackgroundColor3 = Color3.fromRGB(255, 6, 4)
 		tabSeperator.BackgroundTransparency = 0
 		tabSeperator.BorderColor3 = Color3.fromRGB(27, 42, 53)
 		tabSeperator.BorderSizePixel = 0
@@ -464,7 +463,7 @@ local function createOriginialElements()
 
 		page.Name = "Page"
 		page.AnchorPoint = Vector2.new(1, 1)
-		page.BackgroundColor3 = Color3.fromRGB(31, 31, 43)
+		page.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		page.BackgroundTransparency = 1.000
 		page.BorderSizePixel = 0
 		page.Position = UDim2.new(1, -10, 1, -5)
@@ -517,28 +516,28 @@ local function createOriginialElements()
 		local elementHolderPadding = Instance.new("UIPadding")
 
 		section.Name = "Section"
-		section.BackgroundColor3 = Color3.fromRGB(31, 31, 43)
+		section.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		section.BorderSizePixel = 0
 		section.Size = UDim2.new(1, 0, 0, 200)
 		section.ClipsDescendants = true
 
 		heading.Name = "Heading"
 		heading.Parent = section
-		heading.BackgroundColor3 = Color3.fromRGB(40, 41, 52)
+		heading.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		heading.BorderSizePixel = 0
 		heading.Size = UDim2.new(1, 0, 0, 22)
 
 		headingSeperator.Name = "HeadingSeperator"
 		headingSeperator.Parent = heading
 		headingSeperator.AnchorPoint = Vector2.new(0, 1)
-		headingSeperator.BackgroundColor3 = Color3.fromRGB(163, 33, 38)
+		headingSeperator.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		headingSeperator.BorderSizePixel = 0
 		headingSeperator.Position = UDim2.new(0, 0, 1, 0)
 		headingSeperator.Size = UDim2.new(1, 0, 0, 2)
 
 		title.Name = "Title"
 		title.Parent = heading
-		title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		title.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		title.BackgroundTransparency = 1.000
 		title.Size = UDim2.new(1, -20, 0, 20)
 		title.Font = Enum.Font.GothamMedium
@@ -555,7 +554,7 @@ local function createOriginialElements()
 		resizeButton.Name = "ResizeButton"
 		resizeButton.Parent = heading
 		resizeButton.AnchorPoint = Vector2.new(1, 0.5)
-		resizeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		resizeButton.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		resizeButton.BackgroundTransparency = 1.000
 		resizeButton.BorderSizePixel = 0
 		resizeButton.Position = UDim2.new(1, -5, 0.5, 0)
@@ -609,7 +608,7 @@ local function createOriginialElements()
 		titleText.Size = UDim2.new(0.200000003, 0, 1, 0)
 		titleText.ZIndex = 2
 		titleText.Font = Enum.Font.GothamMedium
-		titleText.TextColor3 = Color3.fromRGB(33, 33, 35)
+		titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 		titleText.Text = "N/A"
 		titleText.TextSize = 14.000
 
