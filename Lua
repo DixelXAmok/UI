@@ -149,7 +149,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		finityData.ToggleKey = NewKey
 		
 		if not projectName then
-			self2.tip.Text = "Auto Hub '.. string.sub(tostring(NewKey), 14) .."' Football Fusion 2 Script"
+			self2.tip.Text = "Auto Hub '.. string.sub(tostring(NewKey), 14) ..' Football Fusion 2 Script"
 		end
 		
 		if finityData.UpConnection then
@@ -262,7 +262,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		ZIndex = 2,
 		Size = UDim2.new(1, -30, 0, 30),
 		Position = UDim2.new(0, 30, 0, 0),
-		Text = "Auto Hub '.. string.sub(tostring(self.ToggleKey), 14) .."' Football Fusion 2 Script",
+		Text = "Auto Hub '.. string.sub(tostring(self.ToggleKey), 14) ..' Football Fusion 2 Script",
 		Font = Enum.Font.GothamSemibold,
 		TextSize = 13,
 		TextXAlignment = Enum.TextXAlignment.Left,
@@ -273,7 +273,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	if projectName then
 		self2.tip.Text = projectName
 	else
-		self2.tip.Text = "Auto Hub '.. string.sub(tostring(self.ToggleKey), 14) .."' Football Fusion 2 Script"
+		self2.tip.Text = "Auto Hub '.. string.sub(tostring(self.ToggleKey), 14) ..' Football Fusion 2 Script"
 	end
     
     function finity.settitle(text)
