@@ -246,7 +246,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		Size = UDim2.new(1, -120, 1, -30),
 		AnchorPoint = Vector2.new(1, 0),
 		Position = UDim2.new(1, 0, 0, 30),
-		ZIndex = 3,
+		ZIndex = 2,
 	})
 	self2.categories.ClipsDescendants = true
 
@@ -1107,10 +1107,10 @@ function finity.new(isdark, gprojectName, thinProject)
                         })
 
                         if data.default then
-                            local size = math.clamp(data.default - cheat.sliderbar.AbsolutePosition.X, 0, 160)
-							local percent = size / 160
+                            local size = math.clamp(data.default - cheat.sliderbar.AbsolutePosition.X, 0, 150)
+							local percent = size / 150
 							local perc = default/maximum
-                            cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 200) / 200
+                            cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 100) / 100
                             finity.gs["TweenService"]:Create(cheat.visiframe, TweenInfo.new(0.1), {
 								Size = UDim2.new(perc, 0, 1, 0),
                             }):Play()
@@ -1124,10 +1124,10 @@ function finity.new(isdark, gprojectName, thinProject)
                         end
 
                         function cheat:SetValue(value)
-                            local size = math.clamp(value - cheat.sliderbar.AbsolutePosition.X, 0, 160)
+                            local size = math.clamp(value - cheat.sliderbar.AbsolutePosition.X, 0, 150)
 							local percent = size / 160
 							local perc = default/maximum
-                            cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 200) / 200
+                            cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 100) / 100
                             finity.gs["TweenService"]:Create(cheat.visiframe, TweenInfo.new(0.1), {
 								Size = UDim2.new(perc, 0, 1, 0),
                             }):Play()
@@ -1141,10 +1141,10 @@ function finity.new(isdark, gprojectName, thinProject)
                         end
 
 						cheat.sliderbar.MouseButton1Down:Connect(function()
-							local size = math.clamp(mouse.X - cheat.sliderbar.AbsolutePosition.X, 0, 160)
-							local percent = size / 160
+							local size = math.clamp(mouse.X - cheat.sliderbar.AbsolutePosition.X, 0, 150)
+							local percent = size / 150
 
-							cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 200) / 200
+							cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 100) / 100
 							if precise then
 								cheat.numbervalue.Text = math.ceil(tostring(cheat.value)) .. suffix
 							else
@@ -1164,20 +1164,20 @@ function finity.new(isdark, gprojectName, thinProject)
 							end
 
 							finity.gs["TweenService"]:Create(cheat.visiframe, TweenInfo.new(0.1), {
-								Size = UDim2.new(size / 160, 0, 1, 0),
+								Size = UDim2.new(size / 150, 0, 1, 0),
 								ImageColor3 = theme.slider_color_sliding
 							}):Play()
 
 							finity.gs["TweenService"]:Create(cheat.numbervalue, TweenInfo.new(0.1), {
-								Position = UDim2.new(size / 160, 5, 0.5, 0),
+								Position = UDim2.new(size / 150, 5, 0.5, 0),
 								TextTransparency = 0
 							}):Play()
 
 							moveconnection = mouse.Move:Connect(function()
-								local size = math.clamp(mouse.X - cheat.sliderbar.AbsolutePosition.X, 0, 160)
-								local percent = size / 160
+								local size = math.clamp(mouse.X - cheat.sliderbar.AbsolutePosition.X, 0, 150)
+								local percent = size / 150
 
-								cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 200) / 200
+								cheat.value = math.floor((minimum + (maximum - minimum) * percent) * 100) / 100
 								if precise then
 									cheat.numbervalue.Text = math.ceil(tostring(cheat.value)) .. suffix
 								else
