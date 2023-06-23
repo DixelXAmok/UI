@@ -243,7 +243,7 @@ local function createOriginialElements()
 		
 		heading.Name = "Heading"
 		heading.Parent = background
-		heading.BackgroundColor3 = Color3.fromRGB(40, 41, 52)
+		heading.BackgroundColor3 = Color3.fromRGB(255, 33, 33)
 		heading.BorderSizePixel = 0
 		heading.Size = UDim2.new(1, 0, 0.0500000007, 0)
 		heading.AutoButtonColor = false
@@ -374,21 +374,6 @@ local function createOriginialElements()
 		tabsUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		tabsUIListLayout.Padding = UDim.new(0, 5)
 		
-		pageLogo.Name = "PageLogo"
-		pageLogo.AnchorPoint = Vector2.new(1, 1)
-		pageLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		pageLogo.BackgroundTransparency = 1.000
-		pageLogo.BorderSizePixel = 0
-		pageLogo.Position = UDim2.new(1, -10, 1, -5)
-		pageLogo.Size = UDim2.new(0.774999976, -25, 1, -15)
-		pageLogo.ZIndex = 0
-		pageLogo.Image = "rbxassetid://11435586663"
-		pageLogo.ImageColor3 = Color3.fromRGB(109, 110, 119)
-		pageLogo.ImageTransparency = 1
-		pageLogo.Parent = holder
-
-		return screenGui
-	end
 	
 	local function createTab()
 		local tab = Instance.new("TextButton")
@@ -400,7 +385,7 @@ local function createOriginialElements()
 		local tabSeperatorUICorner = Instance.new("UICorner")
 
 		tab.Name = "Tab"
-		tab.BackgroundColor3 = Color3.fromRGB(37, 37, 51)
+		tab.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		tab.BackgroundTransparency = 1.000
 		tab.BorderSizePixel = 0
 		tab.Size = UDim2.new(1, 0, 0, 27.5)
@@ -413,7 +398,7 @@ local function createOriginialElements()
 
 		tabText.Name = "TabText"
 		tabText.Parent = tab
-		tabText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tabText.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		tabText.BackgroundTransparency = 1.000
 		tabText.Position = UDim2.new(0.0350000001, 30, 0, 0)
 		tabText.Size = UDim2.new(0.964999974, -30, 1, 0)
@@ -441,7 +426,7 @@ local function createOriginialElements()
 
 		tabSeperator.Name = "TabSeperator"
 		tabSeperator.Parent = tab
-		tabSeperator.BackgroundColor3 = Color3.fromRGB(255, 6, 4)
+		tabSeperator.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		tabSeperator.BackgroundTransparency = 0
 		tabSeperator.BorderColor3 = Color3.fromRGB(27, 42, 53)
 		tabSeperator.BorderSizePixel = 0
@@ -594,7 +579,7 @@ local function createOriginialElements()
 		local designGradient = Instance.new("UIGradient")
 
 		title.Name = "Title"
-		title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		title.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		title.BackgroundTransparency = 1.000
 		title.BorderSizePixel = 0
 		title.Size = UDim2.new(1, 0, 0, 14)
@@ -602,20 +587,20 @@ local function createOriginialElements()
 		titleText.Name = "TitleText"
 		titleText.Parent = title
 		titleText.AnchorPoint = Vector2.new(0.5, 0)
-		titleText.BackgroundColor3 = Color3.fromRGB(31, 31, 43)
+		titleText.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		titleText.BorderSizePixel = 0
 		titleText.Position = UDim2.new(0.5, 0, 0, 0)
 		titleText.Size = UDim2.new(0.200000003, 0, 1, 0)
 		titleText.ZIndex = 2
 		titleText.Font = Enum.Font.GothamMedium
-		titleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+		titleText.TextColor3 = Color3.fromRGB(33, 33, 35)
 		titleText.Text = "N/A"
 		titleText.TextSize = 14.000
 
 		design.Name = "Design"
 		design.Parent = title
 		design.AnchorPoint = Vector2.new(0, 0.5)
-		design.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		design.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		design.BorderSizePixel = 0
 		design.Position = UDim2.new(0, 0, 0.5, 0)
 		design.Size = UDim2.new(1, 0, 0.25, 0)
