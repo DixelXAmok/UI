@@ -246,7 +246,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		Size = UDim2.new(1, -120, 1, -30),
 		AnchorPoint = Vector2.new(1, 0),
 		Position = UDim2.new(1, 0, 0, 30),
-		ZIndex = 2,
+		ZIndex = 3,
 	})
 	self2.categories.ClipsDescendants = true
 
