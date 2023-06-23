@@ -441,9 +441,9 @@ local function createOriginialElements()
 
 		tabSeperator.Name = "TabSeperator"
 		tabSeperator.Parent = tab
-		tabSeperator.BackgroundColor3 = Color3.fromRGB(255, 6, 4)
+		tabSeperator.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		tabSeperator.BackgroundTransparency = 0
-		tabSeperator.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		tabSeperator.BorderColor3 = Color3.fromRGB(33, 33, 35)
 		tabSeperator.BorderSizePixel = 0
 		tabSeperator.Size = UDim2.new(0, 0, 1, 0)
 
@@ -472,7 +472,7 @@ local function createOriginialElements()
 
 		leftScrollingFrame.Name = "LeftScrollingFrame"
 		leftScrollingFrame.Active = true
-		leftScrollingFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 43)
+		leftScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		leftScrollingFrame.BackgroundTransparency = 1.000
 		leftScrollingFrame.Size = UDim2.new(0.5, -5, 1, 0)
 		leftScrollingFrame.ScrollBarThickness = 0
@@ -487,7 +487,7 @@ local function createOriginialElements()
 		rightScrollingFrame.Name = "RightScrollingFrame"
 		rightScrollingFrame.Active = true
 		rightScrollingFrame.AnchorPoint = Vector2.new(1, 0)
-		rightScrollingFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 43)
+		rightScrollingFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 35)
 		rightScrollingFrame.BackgroundTransparency = 1.000
 		rightScrollingFrame.Position = UDim2.new(1, 0, 0, 0)
 		rightScrollingFrame.Size = UDim2.new(0.5, -5, 1, 0)
